@@ -1,1 +1,1 @@
-# -BLUE_MOD_02
+# BLUE_MOD_02
