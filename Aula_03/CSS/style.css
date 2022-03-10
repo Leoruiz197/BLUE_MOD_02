@@ -23,17 +23,16 @@ h2{
 .container{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: stretch;
-    align-content: center;
+    align-items: center;
     gap: 10px;
-
 }
-/* @media (max-width: 800px) {
+@media (max-width: 800px) {
     .container{
       flex-direction: column;
     }
-  } */
+}
 .item{
     display: flex;
     align-self: center;
@@ -47,13 +46,13 @@ h2{
 .card{
     background-color: gray;
     max-width: 260px;
-    max-height: 600px;
-    min-height: 600px;
+    /* max-height: 600px;
+    min-height: 600px; */
     margin: 10px;
     padding: 15px;
     border-radius: 10px;
     text-align: justify;
-    /* align-items: center; */
+    align-items: center;
 }
 .card h3{
     text-align: center;

@@ -14,23 +14,55 @@
                     <h1>Aula 03 Games</h1>
                 </div>
                 <div class="container">
-                    <nav><button class="btm">Filmes</button> <button class="btm">Series</button> <button class="btm">Jogos</button></nav>
+                    <nav>
+                        <a href="#acao">
+                            <button class="btm" id="btn_acao">Ação</button>
+                        </a>
+                        <a href="#corrida">
+                            <button class="btm" id="btn_corrida">Corrida</button>
+                        </a> 
+                        <a href="#fps">
+                            <button class="btm" id="btn_fps">FPS</button>
+                        </a>
+                    </nav>
+                </div>
+                <div class="container">
+                    <input type="text" id="texto"><button class="btm" id="btn_enviar">Enviar</button>
+                    <textarea id="areatexto"></textarea>
                 </div>
             </div>
         </header>
         <main>
             <article>
-                <div class="container_column">
-                    <div class="container">
+                <div class="container_column" >
+                    <div class="container" id="acao">
                         <div class="item titulo">
                             <h2>Ação</h2>
                         </div>
                     </div>
                     <div class="container">
-                        <div class="card item">
+                        <div class="card item" id="gameGod">
                             <h3>God of War</h3>
                             <img src="./Media/img/god.jpg" alt="Capa God of War" width="200px">
                             <p>God of War é uma série de jogos eletrônicos de ação-aventura criada por David Jaffe da Santa Monica Studio, da Sony. Iniciada em 2005 no console PlayStation 2, tornou-se carro-chefe para a marca PlayStation, consistindo em oito jogos em várias plataformas, com um nono atualmente em desenvolvimento. </p>
+                            <button class="more" id="godWar">Saiba mais</button>
+                        </div>
+                        <div class="card item">
+                            <h3>Uncharted</h3>
+                            <img src="./Media/img/uncharted.jpg" alt="Capa Uncharted" width="200px">
+                            <p>Nathan Drake e seu parceiro canastrão Victor "Sully" Sullivan embarcam em uma perigosa busca para encontrar o maior tesouro jamais encontrado. Enquanto isso, eles também rastreiam pistas que podem levar ao irmão perdido de Nathan.</p>
+                            <button class="more">Saiba mais</button>
+                        </div>
+                        <div class="card item">
+                            <h3>Uncharted</h3>
+                            <img src="./Media/img/uncharted.jpg" alt="Capa Uncharted" width="200px">
+                            <p>Nathan Drake e seu parceiro canastrão Victor "Sully" Sullivan embarcam em uma perigosa busca para encontrar o maior tesouro jamais encontrado. Enquanto isso, eles também rastreiam pistas que podem levar ao irmão perdido de Nathan.</p>
+                            <button class="more">Saiba mais</button>
+                        </div>
+                        <div class="card item">
+                            <h3>Uncharted</h3>
+                            <img src="./Media/img/uncharted.jpg" alt="Capa Uncharted" width="200px">
+                            <p>Nathan Drake e seu parceiro canastrão Victor "Sully" Sullivan embarcam em uma perigosa busca para encontrar o maior tesouro jamais encontrado. Enquanto isso, eles também rastreiam pistas que podem levar ao irmão perdido de Nathan.</p>
                             <button class="more">Saiba mais</button>
                         </div>
                         <div class="card item">
@@ -43,7 +75,7 @@
                 </div>
             </article>
             <article>
-                <div class="container">
+                <div class="container" id="corrida">
                     <h2>Corrida</h2>
                 </div>
                 <div class="container">
@@ -62,7 +94,7 @@
                 </div>
             </article>
             <article>
-                <div class="container">
+                <div class="container" id="fps">
                     <h2>FPS</h2>
                 </div>
                 <div class="container">
@@ -84,5 +116,6 @@
         <footer id="rodape">
             <p>&copy; todos direitos reservados BLUE - 2022</p>
         </footer>
+        <script src="./JS/script.js"></script>
     </body>
 </html>
