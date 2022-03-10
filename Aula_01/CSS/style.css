@@ -1,0 +1,30 @@
+p { 
+    color: blue;
+}
+.teste{
+    color: orangered;
+}
+h1, h2, h3 {
+    color: blueviolet;  
+    text-align: center; 
+}
+body {
+    background-color: whitesmoke;
+}
+.teste{
+    color: blue;
+}
+#batman{
+    color: red;
+}
+#batman:hover{
+    color: blue;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+#titulo{
+    border: 5px solid black;
+    margin: 10px 30px 40px 60px;
+    padding: 30px;
+}

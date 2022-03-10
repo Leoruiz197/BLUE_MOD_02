@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap');
+
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: black;
+    color: white;
+}
+h1{
+    font-size: 6em; 
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-size: 4em;
+    font-family: 'Raleway', sans-serif;
+}
+.container_column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    gap: 10px;
+
+}
+/* @media (max-width: 800px) {
+    .container{
+      flex-direction: column;
+    }
+  } */
+.item{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    align-self: flex-start ;
+}
+.titulo{
+    flex-grow: 2;
+}
+.card{
+    background-color: gray;
+    max-width: 260px;
+    max-height: 600px;
+    min-height: 600px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: justify;
+    /* align-items: center; */
+}
+.card h3{
+    text-align: center;
+}
+
+
+.btm{
+    padding: 10px 08px;
+    width: 100px;
+    color: rgb(226, 231, 235);
+    background-color: black;
+    border: solid 1px rgb(197, 86, 86) ;
+    border-radius: 5px;
+    margin: 10px;
+    text-align: center;
+    user-select: none;
+    cursor:pointer;
+    transition: background 1s ;
+}
+.btm:hover{
+    background-color: rgb(151, 49, 49);
+    transform: scale(1)rotate(360deg);
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.more{
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: linear-gradient(rgba(175, 175, 175, 0.9), rgba(211, 211, 211, 0.9));
+    border-radius: 5px;
+    box-shadow: 0 1px 4px -2px #333;
+    text-shadow: 0 -1px #333;
+    color: rgb(0, 0, 0);
+    font-family: 'theSimsSans', Fallback, sans-serif;
+    font-size: 100%;
+}
+.more:after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: 50%;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1));
+    border-radius: 5px;
+}
+.more:hover{
+    background: rgb(151, 49, 49);
+    cursor: pointer;
+}
+#rodape{
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin: 20px 0 0;
+}
