@@ -6,7 +6,8 @@ app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", function (req, res) {
-  res.render("index");
+    const devList = ["Backend", "Frontend", "Fullstack", "DEvSEC"];
+  res.render("index", { titulo: "TESTE aula", nome: "thiago", devList: devList });
 });
 
 app.post("/", function (req, res) {
