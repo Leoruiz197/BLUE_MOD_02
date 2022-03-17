@@ -11,7 +11,10 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/", function (req, res) {
     const devList = ["Backend", "Frontend", "Fullstack", "DEvSEC"];
-  res.render("index", { titulo: "TESTE aula", nome: "thiago", devList: devList, message });
+    setTimeout(() => {
+        message = "";
+    }, 3000);
+    res.render("index", { titulo: "TESTE aula", nome: "thiago", devList: devList, message });
 });
 
 app.post("/", function (req, res) {
@@ -24,7 +27,13 @@ app.get("/pagina", function (req, res) {
 
 app.post("/subscription", function (req, res) {
     const { nome, email } = req.body;
-    message = `Parabéns ${nome}, sua inscrição foi realizada com sucesso! Um e-mail foi enviado para: ${email}`;
+
+    if(nome == "leo"){
+        message = `Usuario ${nome}, ja foi cadastrado`;
+    }else{
+        message = `Parabéns ${nome}, sua inscrição foi realizada com sucesso! Um e-mail foi enviado para: ${email}`;
+    }
+    
     res.redirect("/");
 });
 

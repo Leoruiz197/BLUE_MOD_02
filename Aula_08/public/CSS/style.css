@@ -60,8 +60,20 @@
     font-size: 5rem;
     padding: 0 4rem 2rem 4rem;
   }
+
+  header article h2 {
+    color: #fff;
+    font-size: 3rem;
+    padding: 0 4rem 2rem 4rem;
+  }
   
   header article p {
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 4rem;
+  }
+
+  header article ul li {
     color: #fff;
     font-size: 2rem;
     padding-left: 4rem;
