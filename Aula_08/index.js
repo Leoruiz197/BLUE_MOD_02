@@ -37,4 +37,9 @@ app.post("/subscription", function (req, res) {
     res.redirect("/");
 });
 
+app.get("/detalhes/:pokemon", function(req, res) {
+    console.log(req.params.pokemon);
+    res.send(req.params.pokemon);
+});
+
 app.listen(port, () => console.log(`Servidor rodando em http://localhost:${port}`));
