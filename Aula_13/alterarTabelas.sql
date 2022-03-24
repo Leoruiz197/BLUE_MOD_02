@@ -1,0 +1,16 @@
+ALTER TABLE professores
+ADD COLUMN id_turma INTEGER,
+ADD FOREIGN KEY (id_turma) REFERENCES turmas (id);
+
+ALTER TABLE alunos
+ADD PRIMARY KEY (id),
+ADD COLUMN id_turma INTEGER,
+ADD FOREIGN KEY (id_turma) REFERENCES turmas (id);
+
+ALTER TABLE turmas
+ADD PRIMARY KEY (id),
+ADD COLUMN id_curso INTEGER,
+ADD FOREIGN KEY (id_curso) REFERENCES cursos (id);
+
+ALTER TABLE cursos
+ADD PRIMARY KEY (id);
