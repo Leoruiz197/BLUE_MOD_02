@@ -19,4 +19,12 @@ app.get("/", async (req, res) => {
   });
 });
 
+app.get("/filmes/:id", async (req, res) => {
+    const filme = await Filme.findByPk(req.params.id);
+
+    res.render("detalhes", {
+        filme,
+    });
+});
+
 app.listen(port || process.env.PORT, () => console.log(`Servidor rodando em http://localhost:${port}`));
