@@ -20,6 +20,8 @@
             <div class="item texto">
                 <h2><%= filme.nome %></h2>
                 <p><%= filme.descricao %></p>
+                <a href="/editar/<%= filme.id %>">editar</a>
+                <a href="/deletar/<%= filme.id %>">excluir</a>
             </div>
         </div>
     </main>
